@@ -4,21 +4,19 @@ apply plugin: "watch"
 buildscript {
 
 	repositories {
-		maven { url "http://oss.jfrog.org/repo" }
 		jcenter()
 	}
 
 	dependencies {
-		classpath "io.ratpack:ratpack-gradle:0.9.8-SNAPSHOT"
+		classpath "io.ratpack:ratpack-gradle:0.9.8"
 		classpath "com.bluepapa32:gradle-watch-plugin:0.1.3"
 	}
 
 }
 
 repositories {
-	maven { url "http://oss.jfrog.org/repo" }
-	maven { url "http://repo.springsource.org/repo" }
 	jcenter()
+	maven { url "http://repo.springsource.org/repo" }
 }
 
 dependencies {
